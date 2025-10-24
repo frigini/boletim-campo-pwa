@@ -2,6 +2,7 @@
   "name": "boletim-campo-pwa",
   "version": "1.0.0",
   "description": "PWA para gestão de boletins de campo",
+  "type": "module",
   "main": "index.js",
   "scripts": {
     "dev": "vite",
@@ -12,7 +13,6 @@
   "dependencies": {
     "date-fns": "^2.29.3",
     "html2canvas": "^1.4.1",
-    "jspdf": "^2.5.1",
     "lucide-react": "^0.263.1",
     "pdf-lib": "^1.17.1",
     "react": "^18.2.0",

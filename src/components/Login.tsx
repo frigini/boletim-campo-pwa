@@ -3,11 +3,10 @@ import { useAuth } from '../contexts/AuthContext';
 import { Eye, EyeOff, Mail, Lock, User } from 'lucide-react';
 
 interface LoginProps {
-  onToggleMode: () => void;
   onForgotPassword: () => void;
 }
 
-const Login: React.FC<LoginProps> = ({ onToggleMode, onForgotPassword }) => {
+const Login: React.FC<LoginProps> = ({ onForgotPassword }) => {
   const [isLogin, setIsLogin] = useState(true);
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');

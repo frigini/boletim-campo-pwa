@@ -2,8 +2,6 @@ import { BoletimCampo } from '../types';
 
 const hoje = new Date();
 const dataFormatada = hoje.toISOString().split('T')[0];
-const horaAtual = hoje.getHours().toString().padStart(2, '0');
-const minutoAtual = hoje.getMinutes().toString().padStart(2, '0');
 
 const boletimExemploCompleto: BoletimCampo = {
   // Identificação

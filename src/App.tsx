@@ -61,15 +61,6 @@ const AppContent: React.FC = () => {
     setCurrentView('form');
   };
 
-  const handleGeneratePDF = async (boletim: BoletimCampo) => {
-    try {
-      await generateBoletimPDFFromTemplate(boletim);
-    } catch (error) {
-      console.error('Erro ao gerar PDF:', error);
-      alert('Erro ao gerar PDF. Verifique se todos os dados estão preenchidos e tente novamente.');
-    }
-  };
-
   const handleTestePDF = async () => {
   try {
     await generateBoletimPDFFromTemplate(boletimExemploCompleto);
@@ -94,7 +85,6 @@ const AppContent: React.FC = () => {
     
     return (
       <Login 
-        onToggleMode={() => {}}
         onForgotPassword={() => setShowForgotPassword(true)}
       />
     );

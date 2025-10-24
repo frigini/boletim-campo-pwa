@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { useForm } from 'react-hook-form';
 import { BoletimCampo } from '../types';
 import { Save, FileText, Calendar, Clock, User, Building } from 'lucide-react';
@@ -10,7 +10,7 @@ interface BoletimFormProps {
 }
 
 const BoletimForm: React.FC<BoletimFormProps> = ({ onSave, initialData }) => {
-  const { register, handleSubmit, watch, formState: { errors } } = useForm<BoletimCampo>({
+  const { register, handleSubmit, formState: { errors } } = useForm<BoletimCampo>({
     defaultValues: initialData || {
       data: format(new Date(), 'yyyy-MM-dd'),
       andaimeConvencional: false,
