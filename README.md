@@ -23,11 +23,38 @@ Um aplicativo digital para criar e gerenciar boletins de medição de campo da E
 ### 🌐 Acessando a aplicação
 
 #### Opção 1: Testar localmente (no seu computador)
-1. **Baixe o projeto** para o seu computador
-2. **Abra o terminal/prompt** na pasta do projeto
-3. **Digite o comando**: `npm install` (instala as dependências)
-4. **Digite o comando**: `npm run dev` (inicia a aplicação)
-5. **Abra o navegador** e vá para: `http://localhost:3000`
+
+**O que você precisa instalar?**
+- **Node.js**: É um programa que permite que o sistema funcione no seu computador. É como um motor que faz tudo funcionar.
+
+**Passo a passo para instalar:**
+
+1. **Baixe o Node.js**
+   - Acesse [https://nodejs.org/](https://nodejs.org/) (site oficial)
+   - Clique no botão verde que diz "LTS" (versão mais estável)
+   - O download começará automaticamente
+
+2. **Instale o Node.js**
+   - Abra o arquivo baixado (geralmente na pasta "Downloads")
+   - Siga as instruções na tela (basta clicar em "Avançar" ou "Next")
+   - Marque a opção "Automatically install the necessary tools" se aparecer
+   - Clique em "Finalizar" quando terminar
+
+3. **Verifique se instalou corretamente**
+   - Pressione as teclas `Windows + R`
+   - Digite `cmd` e pressione Enter
+   - Na janela preta que abrir, digite: `node --version`
+   - Se aparecer um número de versão (como v18.12.1), está tudo certo!
+
+4. **Agora sim, vamos ao sistema!**
+   - Baixe o projeto para o seu computador
+   - Navegue até a pasta do projeto (clique duas vezes nela)
+   - Clique com o botão direito em um espaço vazio e escolha "Abrir no terminal"
+   - No terminal, digite: `npm install` e aguarde terminar
+   - Depois digite: `npm run dev`
+   - O sistema vai abrir automaticamente no seu navegador
+
+📌 **Dica:** Se aparecer alguma mensagem perguntando sobre permissões, clique em "Permitir" ou "Allow"
 
 #### Opção 2: Acesso online (quando disponível)
 - Acesse o link fornecido pela equipe de TI da ENGEVAL
